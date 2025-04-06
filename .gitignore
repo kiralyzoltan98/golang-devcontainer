@@ -1,0 +1,17 @@
+# Compiled binary executable (adjust name if different)
+goapp/server
+server
+
+# Go build cache
+*.o
+*.a
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Editor/IDE directories
+.vscode/
+.idea/
+*.swp
+*~
