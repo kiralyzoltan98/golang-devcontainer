@@ -49,7 +49,7 @@ dev-stop: ## Stop and remove the persistent development container
 	@echo "--- Container stopped and removed (if it existed)."
 
 # Target to execute the go run command inside the running dev container
-dev-exec: ## Run the Go application inside the running development container
+dev-run: ## Run the Go application inside the running development container
 	@echo "--- Executing 'go run server.go' inside container '$(DEV_CONTAINER_NAME)'..."
 	@if ! podman ps -q --filter name=^/${DEV_CONTAINER_NAME}$$ | grep -q .; then \
 		echo "--- Error: Container '$(DEV_CONTAINER_NAME)' is not running. Run 'make dev' first."; \
